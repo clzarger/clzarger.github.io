@@ -1,0 +1,77 @@
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    text-align: center;
+}
+p.bold{
+    text-align: center;
+    font-weight: bold;
+}
+li{
+    text-align: center;
+}
+textarea{
+    text-align: left;
+}
+input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modify{
+    color: blue;
+}
+textarea.format{
+    color: black;
+}
+input.name{
+    color: black;
+}
+#background {
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+}
+#background2 {
+    height: 75px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+}
+#form-wrapper {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+#form1 {
+    width: 33%;
+    display: inline-block;
+    min-width:200px;
+}
+#form2 {
+    width: 33%;
+    display: inline-block;
+    min-width:200px;
+}
+#form3 {
+    width: 33%;
+    display: inline-block;
+    min-width:200px;
+}
+#word {
+    width: 10%;
+    display: inline-block;
+}
+#powerpoint {
+    width: 10%;
+    display: inline-block;
+}
+output.outputOne {
+    font-weight: bold;
+}

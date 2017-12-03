@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>QuickChords</title>
+
+    <!---CDN Links-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="./bundle.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- <script src="./website.js"></script> -->
+</head>
+
+<!---HEADER-->
+<body>
+    <div><nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home<span class="sr-only">(current)</span></a></li>
+            <li><a href="/product">Products</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/donate">Donate</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!---BODY-->
+    <div class="jumbotron">
+        <p> Welcome to QuickChords!
+        <li>Improve Tab & Chord sheet formatting</li>
+        <li>Instantly create Microsoft Word & Microsoft PowerPoint files</li>
+        </p>
+    </div>
+
+    <a href="./secondPage.html">Click me!</a>
+
+    <p>It's easy! Follow the steps below:</p>
+
+    <br>
+    <!---STEP 1-->
+    <p class="bold">1. Find Tabs to reformat:
+        <a href="https://www.ultimate-guitar.com/">
+            Try Here </a>
+    </p>
+
+    <br>
+    <!---STEP 2-->
+    <p class="bold">2. Copy and paste your songs below:</p>
+
+    <br>
+
+    <div id="background">
+        <div id="form-wrapper">
+
+            <div id="form1">
+            <form>
+                <p>Song 1 Name:<input class="name" type="text" id="name1">
+                <p>Song 1 Chords:<textarea class="format" id="chords1" name="comments" cols="40" rows="12"></textarea>
+            </form></div>
+
+            <div id="form2">
+            <form>
+                <p>Song 2 Name:<input class="name" type="text" id="name2">
+                <p>Song 2 Chords:<textarea class="format" id="chords2" name="comments" cols="40" rows="12"></textarea>
+            </form></div>
+
+            <div id="form3">
+                <form>
+                    <p>Song 3 Name:<input class="name" type="text" id="name3">
+                    <p>Song 3 Chords:<textarea class="format" id="chords3" name="comments" cols="40" rows="12"></textarea>
+                </form></div>
+
+        </div>
+    </div>
+    <!---STEP 3-->
+    <p class="bold">3. Download Files!</p>
+<br>
+
+    <div id="background2">
+        <div id="form-wrapper">
+
+            <div id="word">
+                <form>
+                    <input type="button" value="Chords" onclick="test()"/></input>
+                </form></div>
+
+            <div id="powerpoint">
+                <form>
+                    <input type="button" value= "Slides" onclick="slides()"/></input
+                </form></div>
+
+        </div>
+
+    </div>
+
+    <div id="total"></div>
+
+</div>
+</body>
+</html>
