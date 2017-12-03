@@ -60223,7 +60223,7 @@ window.slides = function () {
 
   //SONG ONE!!!!!!!!!!!!
   //remove chords
-  var one1 = chordsInput1.replace(/Am\s|A\s|A#\s|Bm\s|C\s|Dsus|G\s|E\s|Em\s|Em7\s|D\s|Dm\s|F\s|Cadd2|Cadd9|G\/D|D\/F#|G\/B|Dsus4|Am7|-|Am\/G|C\/E/g, "");
+  var one1 = chordsInput1.replace(/Am\s|A\s|A#\s|A\/G|Bm\s|C\s|Dsus|G\s|E\s|Em\s|Em7\s|D\s|Dm\s|F\s|Cadd2|Cadd9|G\/D|D\/F#|G\/B|Dsus4|Am7|-|Am\/G|C\/E/g, "");
   var two1 = one1.replace(/^\s*[\r\n]*/gm, "");
   //var two = three.replace(/\[Intro]\n\s/,"");
   //find where to split slides
