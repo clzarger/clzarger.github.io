@@ -1,77 +1,62 @@
-textarea {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+div.container div.row div.col-sm a {
+  color: white;
 }
+div.container div.row div.col-sm a:link {
+  color: white;
+  text-decoration: none;
+}
+div.container div.row div.col-sm a:visited {
+  color: white;
+  text-decoration: none;
+}
+div.container div.row div.col-sm a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+div.container div.row div.col-sm a:active {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+body {
+  font-family: Helvetica, Arial, Verdana, Georgia;
+  font-size: 16px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: black;
+  background-color: white;
+}
+p.header{
+  text-align: left;
+  font-size: 30px;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+}
+
 p{
-    text-align: center;
+    text-align: left;
 }
-p.bold{
-    text-align: center;
-    font-weight: bold;
-}
+
 li{
-    text-align: center;
+    text-align: left;
 }
 textarea{
+  display: block;
+  text-align: left;
+}
+textarea.format{
     text-align: left;
 }
 input{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.modify{
-    color: blue;
-}
-textarea.format{
-    color: black;
+    text-align: left;
 }
 input.name{
     color: black;
 }
-#background {
-    height: 350px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    background-position: center;
-}
-#background2 {
-    height: 75px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    background-position: center;
-}
-#form-wrapper {
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-}
-#form1 {
-    width: 33%;
-    display: inline-block;
-    min-width:200px;
-}
-#form2 {
-    width: 33%;
-    display: inline-block;
-    min-width:200px;
-}
-#form3 {
-    width: 33%;
-    display: inline-block;
-    min-width:200px;
-}
-#word {
-    width: 10%;
-    display: inline-block;
-}
-#powerpoint {
-    width: 10%;
-    display: inline-block;
-}
-output.outputOne {
-    font-weight: bold;
+img {
+  max-width: 50%;
+  max-height: 100%;
+  float: left;
 }

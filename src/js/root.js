@@ -3,8 +3,8 @@ const PDFDocument = require('pdfkit');
 const blobStream = require('blob-stream');
 const fs = require('fs');
 
-
-window.test = function () {
+// CHORDS DOWNLOADER
+window.chords = function () {
     var filename = 'Chords';
     // <!---inputs-->
     var chordsOne = document.getElementById("chords1").value;
@@ -93,7 +93,7 @@ window.test = function () {
 };
 
 
-
+// SLIDES BUTTON
 window.slides = function () {
     var filename = 'Slides';
     // inputs
@@ -106,9 +106,9 @@ window.slides = function () {
     var title3 = document.getElementById("name3").value;
     var chordsInput3 = document.getElementById("chords3").value;
 
-//reformat!!!!!!!!!!!!!!
+    //reformat!!!!!!!!!!!!!!
 
-//SONG ONE!!!!!!!!!!!!
+    //SONG ONE!!!!!!!!!!!!
     //remove chords
     var one1 = chordsInput1.replace(/Am\s|A\s|A#\s|A\/G|Bm\s|C\s|Dsus|G\s|E\s|Em\s|Em7\s|D\s|Dm\s|F\s|Cadd2|Cadd9|G\/D|D\/F#|G\/B|Dsus4|Am7|-|Am\/G|C\/E/g,"");
     var two1 = one1.replace(/^\s*[\r\n]*/gm,"");
@@ -143,7 +143,7 @@ window.slides = function () {
     var slideEight1 = slideEightPre1.replace(/\[.*\]/g,"");
 
 
-//SONG TWO!!!!!!!!!!!
+    //SONG TWO!!!!!!!!!!!
 
     //remove chords
     var one2 = chordsInput2.replace(/Am\s|A\s|A#\s|Bm\s|C\s|Dsus|G\s|E\s|Em\s|Em7\s|D\s|Dm\s|F\s|Cadd2|Cadd9|G\/D|D\/F#|G\/B|Dsus4|Am7|-|Am\/G|C\/E/g,"");
@@ -180,7 +180,7 @@ window.slides = function () {
 
 
 
-//SONG THREE!!!!!!!!!!!
+    //SONG THREE!!!!!!!!!!!
 
     //remove chords
     var one3 = chordsInput3.replace(/Am\s|A\s|A#\s|Bm\s|C\s|Dsus|G\s|E\s|Em\s|Em7\s|D\s|Dm\s|F\s|Cadd2|Cadd9|G\/D|D\/F#|G\/B|Dsus4|Am7|-|Am\/G|C\/E/g,"");
@@ -308,7 +308,7 @@ window.slides = function () {
       align: 'center',
     });
 
-//SONG TWO!!!!!!!!
+    //SONG TWO!!!!!!!!
 
     //song two title
     doc.addPage();
@@ -394,7 +394,7 @@ window.slides = function () {
 
 
 
-//SONG THREE!!!!!!!!
+    //SONG THREE!!!!!!!!
 
     //song two title
     doc.addPage();
@@ -498,4 +498,15 @@ window.slides = function () {
         pom.click();
     }
   })
+};
+
+
+window.phone = function () {
+  var pptx = require('pptxgenjs');
+  var pptx1 = new pptx.constructor();
+  var slide = pptx1.addNewSlide();
+  slide.addText('Hello World!', { x:1.5, y:1.5, font_size:18, color:'363636' });
+  pptx.save('Sample Presentation');
+
+  console.log(28);
 };

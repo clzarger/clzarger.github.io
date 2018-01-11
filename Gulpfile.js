@@ -25,8 +25,12 @@ gulp.task('bundle', () =>
 gulp.task('copyStatic', () => {
 	gulp.src([
 		'./src/index.html',
-        './src/secondPage.html',
-        './src/css/styles.css'
+    './src/about.html',
+		'./src/works.html',
+		'./src/donate.html',
+    './src/css/styles.css',
+		'./src/favicon.png',
+		'./src/logo.png',
 	]).pipe(gulp.dest('./dist'));
 });
 
